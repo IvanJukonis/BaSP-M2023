@@ -19,5 +19,13 @@ There was an introduction into Git and HTML. First codes were introduced into th
 
 I developed the Landing Page of the application only using HTML. There has not been CSS code writen on this week.
 
+## Week 03
+The objective of this week is to understand the usage of CSS.
+
+In order to move through the weekly problematic I had to:
+    - Make corrections into the html file of week 2.
+    - Add styles into the landing page using CSS.
+    - Make sure the landing page is similar as the one created into the figma screenflow.
+
 ## Authors
 - Ivan Jukonis

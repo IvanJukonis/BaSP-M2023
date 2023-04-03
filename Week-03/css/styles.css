@@ -113,7 +113,7 @@ h1{
     text-align: center;
     width: 500px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     margin-left: 76px;
 }
 
@@ -129,6 +129,17 @@ h1{
     color: #373867;
     text-align: center;
     margin-top: 35px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    text-decoration-color: #49A37B;
+}
+
+.section-title span {
+    padding: 11px 0;
+    font-size: 19px;
+    font-size: 25px;
+    border-bottom: 3px solid #49A37B
 }
 
 #section-title-welcome {
@@ -181,6 +192,12 @@ h1{
     margin-top: 55px;
 }
 
+#section-about-container-top p{
+    margin-bottom: 30px;
+    margin-right: 75px;
+    float: right;
+}
+
 #section-about-container-bot {
     margin-left: 100px;
 }
@@ -190,12 +207,6 @@ h1{
     width: 500px;
     margin-top: 50px;
     margin-bottom: 140px;
-}
-
-#section-about-container-top p{
-    margin-bottom: 30px;
-    margin-right: 75px;
-    float: right;
 }
 
 .section-about-imgcontainer-right {
@@ -218,3 +229,109 @@ h1{
     width: 450px;
     height: 248px;
 }
+
+.section-touch-form {
+    text-align: center;
+}
+
+.section-touch-form {
+    text-align: center;
+}
+
+.form-input {
+    width: 260px;
+    height: 36px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.form-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+    padding-left: 10px;
+}
+
+
+.section-touch-form select {
+    width: 566px;
+    height: 36px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+    padding-left: 10px;
+}
+
+.section-touch-form textarea {
+    width: 560px;
+    height: 210px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.section-touch-form textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.section-touch-form label {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.form-container-top {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.form-container-bottom {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-container-top div{
+    text-align: left;
+}
+
+.form-container-bottom div{
+    text-align: left;
+}
+
+.form-button {
+    width: 123px;
+    height: 47px;
+    background: #AACE9B;
+    border-width: 0px;
+    border-radius: 5px;
+    color: #373867;
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+

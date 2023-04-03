@@ -1,6 +1,7 @@
 main {
     padding-top: 100px;
     margin-left: 313px;
+    width: 1199px;
 }
 
 p {
@@ -9,13 +10,12 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
     color: #373867;
 }
 
 .bar-header {
     background-color: #373867;
-    width: 1920px;
+    width: 1512px;
     height: 98px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
@@ -54,7 +54,7 @@ p {
     margin-bottom: 17px;
 }
 
-#title-bottom-aside{
+#title-bottom-aside {
     font-family:'Roboto';
     font-style: normal;
     font-weight: 876;
@@ -128,6 +128,7 @@ h1{
     line-height: 35px;
     color: #373867;
     text-align: center;
+    margin-top: 35px;
 }
 
 #section-title-welcome {
@@ -144,4 +145,76 @@ h1{
     margin-top: 65px;
     margin-bottom: 65px;
     margin-right: 76px;
+}
+
+.section-features-articles {
+    display: inline-block;
+    text-align: left;
+    width: 400px;
+    margin-left: 140px;
+}
+
+.section-features-articles p {
+    margin-left: 50px;
+    width: 350px;
+}
+
+.section-features-titles {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 876;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #373867;
+    font-stretch: 100;
+}
+
+.section-about-container p{
+    width: 500px;
+    text-align: justify;
+}
+
+#section-about-container-top {
+    margin-bottom: 25px;
+    margin-top: 55px;
+}
+
+#section-about-container-bot {
+    margin-left: 100px;
+}
+
+#section-about-container-bot p {
+    display: inline-block;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+
+#section-about-container-top p{
+    margin-bottom: 30px;
+    margin-right: 75px;
+    float: right;
+}
+
+.section-about-imgcontainer-right {
+    float: right;
+    margin-left: 50px;
+    margin-right: 75px;
+}
+
+.section-about-imgcontainer-right img {
+    width: 450px;
+    height: 248px;
+}
+
+.section-about-imgcontainer-left {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.section-about-imgcontainer-left img {
+    width: 450px;
+    height: 248px;
 }

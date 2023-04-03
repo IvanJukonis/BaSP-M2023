@@ -333,5 +333,36 @@ h1{
     line-height: 19px;
 }
 
+.section-activities-list {
+    text-align: center;
+    vertical-align: top;
+}
+
+.section-activities-list {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #373867;
+    font-stretch: 100;
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 130px;
+}
+
+.section-activities-list li {
+    text-align: left;
+}
+
+.section-activities-list img {
+    width: 636px;
+    height: 245px;
+}
+
+
 
 

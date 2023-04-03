@@ -1,10 +1,21 @@
-main{
+main {
+    padding-top: 100px;
     margin-left: 313px;
 }
 
-.bar-header{
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #373867;
+}
+
+.bar-header {
     background-color: #373867;
-    width: 1512px;
+    width: 1920px;
     height: 98px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
@@ -32,16 +43,46 @@ main{
 
 .container-bottom-aside {
     display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+    text-align: left;
+    margin-left: 35px;
+    margin-bottom: 17px;
+}
+
+#title-bottom-aside{
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 876;
+    font-size: 20px;
+    line-height: 23px;
     margin-top: 480px;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color:#FFFFFF;
+    text-decoration:underline;
+    text-align: center;
 }
 
 .container-icon-aside {
     display: inline-block;
 }
 
+.container-icon-aside img {
+    margin-top: 23px;
+    vertical-align: bottom;
+    color:#373867;
+    text-align: center;
+}
+
 .container-img-aside {
     display: inline-block;
-    background-color: white;
+    background-color: #FFFFFF;
     margin-top: 16.44px;
     border: 1px solid #373867;
     border-radius: 5px;
@@ -50,6 +91,7 @@ main{
     font-family: 'Roboto', sans-serif;
     color: #373867;
     text-decoration:none;
+    font-weight: bold;
 }
 
 .container-img-aside img {
@@ -57,10 +99,31 @@ main{
     vertical-align: bottom;
 }
 
-.section-title {
+h1{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #373867;
+}
+
+.section-head-title {
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 76px;
+}
+
+.section-head-img{
+    float: right;
+}
+
+.section-title {
+    font-family: 'Roboto';
+    font-style: normal;
     font-size: 30px;
     line-height: 35px;
     color: #373867;
@@ -70,13 +133,15 @@ main{
 #section-title-welcome {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #49A37B
 }
 
-.section-title-img img{
+.section-head-img img {
     width: 500px;
     height: 315px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-right: 76px;
 }

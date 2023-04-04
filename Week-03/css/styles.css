@@ -171,7 +171,12 @@ h1 {
     display: inline-block;
     width: 400px;
     margin-left: 140px;
+    margin-top: 20px;
     text-align: left;
+}
+
+.section-features-articles img {
+    vertical-align: middle;
 }
 
 .section-features-articles p {

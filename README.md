@@ -22,10 +22,7 @@ I developed the Landing Page of the application only using HTML. There has not b
 ## Week 03
 The objective of this week is to understand the usage of CSS.
 
-In order to move through the weekly problematic I had to:
-    - Make corrections into the html file of week 2.
-    - Add styles into the landing page using CSS.
-    - Make sure the landing page is similar as the one created into the figma screenflow.
+In order to move through the weekly problematic I had to: Make corrections into the html file of week 2, add styles into the landing page using CSS, and make sure the landing page is similar as the one created into the figma screenflow.
 
 ## Authors
 - Ivan Jukonis

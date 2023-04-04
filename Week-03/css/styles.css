@@ -1,75 +1,95 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
+    width: 1199px;
     padding-top: 100px;
     margin-left: 313px;
-    width: 1199px;
 }
 
 p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #373867;
 }
 
-.bar-header {
-    background-color: #373867;
-    width: 1512px;
-    height: 98px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
-    bottom: 0;
+footer {
+    width: 1199px;
+    height: 72px;
+    margin-top: 100px;
+    margin-left: 313px;
+    background-color: #AACE9B;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
-.bar-header img{
+footer div {
+    padding-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer div img {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+footer h3 {
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.bar-header {
+    position: fixed;
+    width: 1512px;
+    height: 98px;
+    background-color: #373867;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bar-header img {
     padding-top: 28px;
     padding-left: 29px;
 }
 
 .bar-aside {
-    background-color: #AACE9B;
+    position: fixed;
     float: left;
     width: 313px;
     height: 871px;
-    text-align: center;
-    position: fixed;
     margin-top: 98px;
-    top: 0;
-    bottom: 0;
+    background-color: #AACE9B;
+    text-align: center;
 }
 
 .container-bottom-aside {
     display: inline-block;
-    font-family: 'Roboto';
-    font-style: normal;
+    margin-left: 35px;
+    margin-bottom: 17px;
+    text-align: left;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: #373867;
-    text-align: left;
-    margin-left: 35px;
-    margin-bottom: 17px;
 }
 
 #title-bottom-aside {
-    font-family:'Roboto';
-    font-style: normal;
+    margin-top: 460px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
     font-weight: 876;
     font-size: 20px;
     line-height: 23px;
-    margin-top: 460px;
-    text-transform: capitalize;
-    font-feature-settings: 'tnum' on, 'lnum' on;
-    color:#FFFFFF;
-    text-decoration:underline;
-    text-align: center;
+    color: #FFFFFF;
 }
 
 .container-icon-aside {
@@ -79,32 +99,29 @@ p {
 .container-icon-aside img {
     margin-top: 23px;
     vertical-align: bottom;
-    color:#373867;
     text-align: center;
+    color: #373867;
 }
 
 .container-img-aside {
     display: inline-block;
-    background-color: #FFFFFF;
-    margin-top: 16.44px;
+    height: 37px;
+    width: 263px;
+    margin-top: 16px;
     border: 1px solid #373867;
     border-radius: 5px;
-    height: 37.691734313964844px;
-    width: 263px;
-    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
     color: #373867;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: bold;
 }
 
 .container-img-aside img {
-    margin-top: 10px;
     vertical-align: bottom;
+    margin-top: 10px;
 }
 
-h1{
-    font-family: 'Roboto';
-    font-style: normal;
+h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -113,41 +130,30 @@ h1{
 
 .section-head-title {
     display: inline-block;
-    text-align: center;
     width: 500px;
     margin-top: 100px;
     margin-bottom: 70px;
     margin-left: 76px;
+    text-align: center;
 }
 
-.section-head-img{
+.section-head-img {
     float: right;
 }
 
 .section-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 30px;
-    line-height: 35px;
-    color: #373867;
-    text-align: center;
     margin-top: 35px;
+    text-align: center;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
     text-decoration-color: #49A37B;
+    font-size: 30px;
+    line-height: 35px;
+    color: #373867;
 }
 
-.section-title span {
-    padding: 11px 0;
-    font-size: 19px;
-    font-size: 25px;
-    border-bottom: 3px solid #49A37B
-}
-
-#section-title-welcome {
-    font-family: 'Roboto';
-    font-style: normal;
+#section-head-welcome {
     font-size: 20px;
     line-height: 23px;
     color: #49A37B
@@ -163,29 +169,25 @@ h1{
 
 .section-features-articles {
     display: inline-block;
-    text-align: left;
     width: 400px;
     margin-left: 140px;
+    text-align: left;
 }
 
 .section-features-articles p {
-    margin-left: 50px;
     width: 350px;
+    margin-left: 50px;
 }
 
 .section-features-titles {
-    font-family: 'Roboto';
-    font-style: normal;
+    text-transform: capitalize;
     font-weight: 876;
     font-size: 24px;
     line-height: 28px;
-    text-transform: capitalize;
-    font-feature-settings: 'tnum' on, 'lnum' on;
     color: #373867;
-    font-stretch: 100;
 }
 
-.section-about-container p{
+.section-about-container p {
     width: 500px;
     text-align: justify;
 }
@@ -195,10 +197,10 @@ h1{
     margin-top: 55px;
 }
 
-#section-about-container-top p{
+#section-about-container-top p {
+    float: right;
     margin-bottom: 30px;
     margin-right: 75px;
-    float: right;
 }
 
 #section-about-container-bot {
@@ -249,28 +251,23 @@ h1{
 }
 
 .form-input::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
+    padding-left: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #c6c6c6;
-    padding-left: 10px;
 }
-
 
 .section-touch-form select {
     width: 566px;
     height: 36px;
+    padding-left: 10px;
     border: 1px solid #373867;
     border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #c6c6c6;
-    padding-left: 10px;
 }
 
 .section-touch-form textarea {
@@ -281,8 +278,6 @@ h1{
 }
 
 .section-touch-form textarea::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -293,14 +288,12 @@ h1{
 
 .section-touch-form label {
     display: block;
-    font-family: 'Roboto';
-    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 5px;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     color: #373867;
-    margin-top: 30px;
-    margin-bottom: 5px;
 }
 
 .form-container-top {
@@ -313,45 +306,40 @@ h1{
     vertical-align: top;
 }
 
-.form-container-top div{
+.form-container-top div {
     text-align: left;
 }
 
-.form-container-bottom div{
+.form-container-bottom div {
     text-align: left;
 }
 
 .form-button {
     width: 123px;
     height: 47px;
-    background: #AACE9B;
+    margin-top: 30px;
     border-width: 0px;
     border-radius: 5px;
-    color: #373867;
-    margin-top: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
+    background: #AACE9B;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
+    color: #373867;
 }
 
 .section-activities-list {
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: capitalize;
-    font-feature-settings: 'tnum' on, 'lnum' on;
-    color: #373867;
-    font-stretch: 100;
     margin-top: 50px;
     margin-left: 140px;
     margin-right: 130px;
+    text-transform: capitalize;
+    font-stretch: 100;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #373867;
 }
 
 .section-activities-list li {
@@ -364,8 +352,6 @@ h1{
 }
 
 .section-membership {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 100%;
@@ -379,7 +365,7 @@ h1{
     border-collapse: collapse;
 }
 
-.section-membership-table tr:nth-child(odd){
+.section-membership-table tr:nth-child(odd) {
     background-color: #D9D9D9;
 }
 
@@ -390,40 +376,3 @@ h1{
 #membership-table-th {
     width: 146px;
 }
-
-footer {
-    width: 1199px;
-    height: 72px;
-    margin-top: 100px;
-    margin-left: 313px;
-    background-color: #AACE9B;
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
-}
-
-footer div{
-    padding-top: 10px;
-    
-}
-
-footer a{
-    text-decoration: none;
-}
-
-footer div img{
-    width: 30px;
-    height: 30px;
-    margin-left: 12px;
-    
-}
-
-footer h3{
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-

@@ -17,7 +17,7 @@ There was no code introduced in the repository.
 ## Week 02
 There was an introduction into Git and HTML. First codes were introduced into the repository.
 
-I developed the Landing Page of the application only using HTML. There has not been CSS code writen on this week.
+I developed the Landing Page of the application only using HTML. There has not been CSS code written on this week.
 
 ## Week 03
 The objective of this week is to understand the usage of CSS.

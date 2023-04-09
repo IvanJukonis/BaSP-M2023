@@ -23,3 +23,234 @@
     margin: 0px 10px 0px 10px;
 }
 
+.section-features {
+    text-align: left;
+}
+
+.section-features-titles {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 876;
+    font-size: 16px;
+    line-height: 28px;
+    color: #373867;
+}
+
+.section-features-articles img {
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+.section-features-articles p {
+    width: 95%;
+    margin: 20px 20px 20px;
+    font-size: 14px;
+}
+
+.section-about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.section-about-container p {
+    width: 95%;
+    margin: 20px 10px 20px 20px;
+}
+
+.section-about-textdesktop {
+    display: none;
+}
+
+.section-about-container img {
+    width: 90%;
+    margin: 0px 10px 0px 10px;
+}
+
+.section-about-container button {
+    width: 82px;
+    height: 32px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #373867;
+    margin-bottom: 20px;
+}
+
+.section-touch-form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-touch-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px 20px 0px 20px;
+}
+
+.form-button-top {
+    display: none;
+}
+
+.form-input {
+    width: 260px;
+    height: 36px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.form-input::placeholder {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+}
+
+.section-touch-form select {
+    width: 270px;
+    height: 36px;
+    padding-left: 10px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+}
+
+.section-touch-form textarea {
+    width: 265px;
+    height: 210px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.section-touch-form textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.section-touch-form label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+}
+
+.form-button {
+    align-self: flex-end;
+    width: 76px;
+    height: 33px;
+    margin-top: 30px;
+    border-width: 0px;
+    border-radius: 5px;
+    background: #AACE9B;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
+    color: #373867;
+}
+
+.section-activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-activities-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-transform: capitalize;
+    font-stretch: 100;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 28px;
+    color: #373867;
+}
+
+.section-activities-list div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.activities-list-top {
+    align-items: end;
+}
+
+.activities-list-bot {
+    align-items: start;
+    text-align: center;
+}
+
+.section-activities-list div li{
+    width: 70px;
+    text-align: center;
+}
+
+.section-activities img {
+    width: 90%;
+    margin: 0px 10px 0px 10px;
+}
+
+.section-membership {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #373867;
+}
+
+.section-membership-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.table-th-1 {
+    width: 40%;
+}
+
+.table-th-2 {
+    width: 25%;
+}
+
+.table-th-3 {
+    width: 17%;
+}
+
+.section-membership-table tr:nth-child(odd) {
+    background-color: #D9D9D9;
+}
+
+.section-membership-table tr {
+    height: 60px;
+}
+
+

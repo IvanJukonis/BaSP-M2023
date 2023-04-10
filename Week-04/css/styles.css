@@ -40,15 +40,11 @@ h1 {
     line-height: 35px;
     color: #373867;
 }
-/*
+
 @media only screen and (min-width: 601px) {
-    main {
-        background-color: red;
+
+    p {
+        font-size: 24px;
     }
 }
 
-@media only screen and (min-width: 1025px) {
-    main {
-        background-color: aqua;
-    }
-}*/

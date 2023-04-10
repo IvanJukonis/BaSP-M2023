@@ -329,5 +329,108 @@
         font-size: 18px;
     }
 
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-button-top {
+        display: flex;
+        justify-content: center;
+        width: 123px;
+        height: 47px;
+        font-size: 16px;
+        margin-top: 30px;
+        border-width: 0px;
+        border-radius: 5px;
+        background: #AACE9B;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #373867;
+    }
+
+    .section-touch-form div {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .form-button {
+        display: none;
+    }
+
+    .section-about-flexcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0px 20px 0px 20px
+    }
+
+    .section-about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .section-about-container p {
+        width: 45%;
+        font-size: 14px;
+    }
+
+    .section-about-textdesktop {
+        display: flex;
+    }
+
+    .section-about-textmobile {
+        display: none;
+    }
+
+    .section-about-img {
+        display: flex;
+        order: 1;
+    }
+
+    .section-about-container img {
+        width: 45%;
+    }
+
+    .section-about-container button {
+        display: none;
+    }
+
+    .section-activities {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section-activities-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        font-size: 20px;
+        margin: 0px 0px 0px 0px;
+        list-style: disc;
+    }
+
+    .activities-list-top,  .activities-list-bot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-activities li {
+        margin-bottom: 10px;
+    }
+
+    .section-activities img {
+        width: 55%;
+        margin-right: 50px;
+    }
 }
 

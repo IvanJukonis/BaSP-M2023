@@ -1,5 +1,6 @@
 .container-header {
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -13,3 +14,7 @@
     margin: 0px 20px 0px 20px;
 }
 
+@media only screen and (min-width: 1025px) {
+
+    
+}

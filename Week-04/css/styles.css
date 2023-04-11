@@ -27,6 +27,7 @@ h1 {
 .container-body {
     display: flex;
     flex-direction: column;
+    margin-top: 73px;
 }
 
 .section-title {
@@ -46,5 +47,18 @@ h1 {
     p {
         font-size: 24px;
     }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .container-body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+       margin-left: 313px;
+    }
+
 }
 

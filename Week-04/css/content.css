@@ -436,5 +436,55 @@
 
 @media only screen and (min-width: 1025px) {
 
+    .section-head {
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    .container-section-head {
+        width: 40%;
+    }
+
+    #section-head-welcome {
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .span-section-head {
+        width: 40%;
+    }
+
+    .span-section-head img {
+        max-width: 515px;
+        max-height: 315px;
+    }
+
+    .section-features-titles {
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+    }
+
+    .section-features-titles img {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 43px;
+        max-height: 38px;
+    }
+
+    .section-features-container {
+        justify-content: space-evenly;
+    }
+
+    .section-features-articles {
+        width: 35%;
+    }
+
+    .section-features-articles p {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
 }
 

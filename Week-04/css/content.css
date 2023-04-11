@@ -16,10 +16,6 @@
     margin-bottom: 0px;
 }
 
-.container-section-head p {
-    margin-top: 0px;
-}
-
 #section-head-welcome {
     display: none;
 }
@@ -103,11 +99,11 @@
 
 .section-touch-form {
     display: flex;
-    width: 100%;
-    margin-bottom: 30px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .section-touch-form div {
@@ -226,7 +222,7 @@
     text-align: center;
 }
 
-.section-activities-list div li{
+.section-activities-list div li {
     width: 70px;
     text-align: center;
 }
@@ -248,9 +244,9 @@
 
 .section-membership-table {
     width: 90%;
+    margin: 0px 10px 0px 10px;
     border-collapse: collapse;
     text-align: center;
-    margin: 0px 10px 0px 10px;
 }
 
 .table-th-1 {

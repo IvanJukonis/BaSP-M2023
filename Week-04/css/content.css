@@ -486,5 +486,23 @@
         margin-left: 50px;
     }
 
+    .section-about-container p {
+        font-size: 18px;
+    }
+
+    #section-about-container-top p {
+        text-align: right;
+    }
+
+    .section-touch-form select {
+        width: 400px;
+        height: 36px;
+    }
+
+    .section-touch-form textarea {
+        width: 400px;
+        height: 210px;
+    }
+
 }
 

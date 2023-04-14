@@ -15,7 +15,7 @@ Once you've opened the index.html file in your web browser, you will be taken to
 
 To deploy the project, I will be using GitHub Pages. GitHub Pages is a web hosting service that allows me to deploy my website directly from a GitHub repository.
 
-**Link:** https://ivanjukonis.github.io/BaSP-M2023/week-04
+**Link:** https://ivanjukonis.github.io/BaSP-M2023/Week-04/index.html
 
 ## **Week 01**
 

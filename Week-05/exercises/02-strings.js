@@ -47,6 +47,8 @@ var completedText = firstLetter + firstWord + " " + secondLetter + secondWord;
 
 console.log(completedText); // Leandro Paredes
 
+console.log("Strings exercises end")
+
 
 
 

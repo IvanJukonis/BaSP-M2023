@@ -24,3 +24,5 @@ var lengthSecondText = "Martinez";
 var textLength = lengthFirstText.length + lengthSecondText.length;
 
 console.log(textLength) // 12
+
+console.log("Variables and operators exercises end")

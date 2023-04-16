@@ -12,7 +12,7 @@ console.log(months[4], months[10]); // Mayo Noviembre
 var sortedMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-sortedMonths.sort()
+sortedMonths.sort();
 
 console.log(sortedMonths); // ["Abril" , "Agosto", "Diciembre" ...]
 
@@ -47,15 +47,15 @@ console.log(reverseMonths); // ['Diciembre', 'Noviembre', 'Octubre' ... 'Marzo',
 
 //Exercise 6
 
-var unitedMonths = months.join("-") // Enero-Febrero-Marzo...Octubre-Noviembre-Diciembre
+var unitedMonths = months.join("-"); // Enero-Febrero-Marzo...Octubre-Noviembre-Diciembre
 
 console.log(unitedMonths);
 
 //Exercise 7
 
-var sliceMonths = months.slice(4, 11)
+var sliceMonths = months.slice(4, 11);
 
-console.log(sliceMonths) // ['Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre']
+console.log(sliceMonths); // ['Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre']
 
-console.log("Arrays exercises end")
+console.log("Arrays exercises end");
 

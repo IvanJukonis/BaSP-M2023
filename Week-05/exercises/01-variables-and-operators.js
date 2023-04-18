@@ -1,28 +1,28 @@
  //Variables and Operators
 
-// Exercise 1
+console.log("Variables and Operators");
+
+// Exercise A
 
 var firstNumber = 5;
 var secondNumber = 5;
 var result = firstNumber + secondNumber;
 
-console.log(result); // 10
+console.log("Exercise 1-A: " + result); // 10
 
-// Exercise 2
+// Exercise B
 
 var firstText = "Mes";
 var secondText = "si";
 var completedText = firstText + secondText;
 
-console.log(completedText); // Messi
+console.log("Exercise 1-B: " + completedText); // Messi
 
 
-// Exercise 3
+// Exercise C
 
 var lengthFirstText = "Dibu";
 var lengthSecondText = "Martinez";
 var textLength = lengthFirstText.length + lengthSecondText.length;
 
-console.log(textLength) // 12
-
-console.log("Variables and operators exercises end")
+console.log("Exercise 1-C: " + textLength); // 12

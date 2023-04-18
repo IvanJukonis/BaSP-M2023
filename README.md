@@ -51,5 +51,13 @@ With flexbox, we were able to create more complex and dynamic layouts for the we
 
 Overall, the transition to flexbox and the focus on responsive design greatly improved the quality and usability of our webpage.
 
+## **Week 05**
+
+**Javascript**
+
+During week 5, we delved into the fundamentals of **JavaScript**, the programming language that powers much of the interactive content on the web. We covered essential topics such as variables, data types, operators, and control flow. Through a combination of lectures, readings, and practical exercises, we gained a solid understanding of the core concepts of JavaScript and how to use them to build interactive web applications.
+
+Throughout the week, we completed a total of six sections, each with its own set of exercises to reinforce our learning. We tackled everything from basic syntax to more advanced topics such as functions and arrays. By the end of the week, we had developed a solid foundation in JavaScript and were well-prepared to move on to more complex applications in the weeks ahead.
+
 ## **Authors**
 - Ivan Jukonis

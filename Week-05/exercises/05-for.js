@@ -1,24 +1,26 @@
 //For
 
-//Exercise 1
+console.log("For")
+
+//Exercise A
 
 var team = ["Dibu", "romero", "otamendi", "tagliafico", "Molina"];
 
 for (let i = 0; i < team.length; i++) {
     var teamFor = team[i];
-    console.log(teamFor); // Dibu - Romero - otamendi - tagliafico - Molina
+    window.alert("Exercise 5-A: " + teamFor); // Dibu - Romero - otamendi - tagliafico - Molina
 }
 
-//Exercise 2
+//Exercise B
 
 for (let i = 0; i < team.length; i++) {
     var teamFor = team[i].substring(0,1).toUpperCase() + team[i].substring(1,team[i].length);
     if (teamFor != team[i]) {
-        console.log(teamFor); // Romero - Otamendi - Tagliafico
+        window.alert("Exercise 5-B: " + teamFor); // Romero - Otamendi - Tagliafico
     }
 }
 
-//Exercise 3
+//Exercise C
 
 var sentence = ""
 
@@ -27,9 +29,9 @@ for (let i = 0; i < team.length; i++) {
     sentence = sentence + teamFor
 }
 
-console.log(sentence) // DiburomerootamenditagliaficoMolina
+console.log("Exercise 5-C: " + sentence) // DiburomerootamenditagliaficoMolina
 
-//Exercise 4
+//Exercise D
 
 var emptyArray = [];
 
@@ -37,4 +39,4 @@ for (let i = 0; i < 10; i++) {
     emptyArray[i] = i
 }
 
-console.log(emptyArray) // (10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log("Exercise 5-D: " , emptyArray) // (10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

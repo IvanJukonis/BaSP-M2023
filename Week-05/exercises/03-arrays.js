@@ -1,22 +1,24 @@
 //Arrays
 
-// Exercise 1
+console.log("Arrays");
+
+// Exercise A
 
 var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-console.log(months[4], months[10]); // Mayo Noviembre
+console.log("Exercise 3-A: " , months[4], months[10]); // Mayo Noviembre
 
-// Exercise 2
+// Exercise B
 
 var sortedMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
 sortedMonths.sort();
 
-console.log(sortedMonths); // ["Abril" , "Agosto", "Diciembre" ...]
+console.log("Exercise 3-B: " , sortedMonths); // ["Abril" , "Agosto", "Diciembre" ...]
 
-//Exercise 3
+//Exercise C
 
 var moreMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -24,9 +26,9 @@ var moreMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"
 moreMonths.push("PostDiciembre");
 moreMonths.unshift("PreEnero");
 
-console.log(moreMonths); // ["PreEnero" , "Enero", "Febrero" ... "Diciembre", "PostDiciembre"]
+console.log("Exercise 3-C: " , moreMonths); // ["PreEnero" , "Enero", "Febrero" ... "Diciembre", "PostDiciembre"]
 
-//Exercise 4
+//Exercise D
 
 var lessMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
@@ -34,28 +36,26 @@ var lessMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"
 lessMonths.shift();
 lessMonths.pop();
 
-console.log(lessMonths); // ["Febrero", "Marzo" ... "Octubre", "Noviembre"]
+console.log("Exercise 3-D: " , lessMonths); // ["Febrero", "Marzo" ... "Octubre", "Noviembre"]
 
-//Exercise 5
+//Exercise E
 
 var reverseMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
 "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
 reverseMonths.reverse();
 
-console.log(reverseMonths); // ['Diciembre', 'Noviembre', 'Octubre' ... 'Marzo', 'Febrero', 'Enero']
+console.log("Exercise 3-E: " , reverseMonths); // ['Diciembre', 'Noviembre', 'Octubre' ... 'Marzo', 'Febrero', 'Enero']
 
-//Exercise 6
+//Exercise F
 
 var unitedMonths = months.join("-"); // Enero-Febrero-Marzo...Octubre-Noviembre-Diciembre
 
-console.log(unitedMonths);
+console.log("Exercise 3-F: " , unitedMonths);
 
-//Exercise 7
+//Exercise G
 
 var sliceMonths = months.slice(4, 11);
 
-console.log(sliceMonths); // ['Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre']
-
-console.log("Arrays exercises end");
+console.log("Exercise 3-G: " , sliceMonths); // ['Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre']
 

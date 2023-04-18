@@ -1,37 +1,39 @@
 //If-Else
 
-// Exercise 1
+console.log("If Else");
 
-var randomNumber = Math.random()
+// Exercise A
+
+var randomNumber = Math.random();
 
 if (randomNumber >= 0.5) {
-    console.log(randomNumber + "is bigger than 0.5")
+    window.alert("Exercise 4-A: " + randomNumber + " is bigger than 0.5");
 } else {
-    console.log(randomNumber + "is lower than 0.5")
+    window.alert("Exercise 4-A: " + randomNumber + " is lower than 0.5");
 }
 
-// Exercise 2
+// Exercise B
 
 var age = 23;
 
 if (age <= 2) {
-    console.log("Bebe");
+    window.alert("Exercise 4-A: Bebe");
 }
 else if (age <= 12) {
-    console.log("Niño");
+    window.alert("Exercise 4-A: Niño");
 }
 else if (age <= 19) {
-    console.log("Adolescente");
+    window.alert("Exercise 4-A: Adolescente");
 }
 else if (age <= 30) {
-    console.log("Joven"); // <---
+    window.alert("Exercise 4-A: Joven"); // <---
 }
 else if (age <= 60) {
-    console.log("Adulto");
+    window.alert("Exercise 4-A: Adulto");
 }
 else if (age <= 75){
-console.log("Adulto Mayor");
+    window.alert("Exercise 4-A: Adulto Mayor");
 }
 else {
-    console.log("Abuelo");
+    window.alert("Exercise 4-A: Abuelo");
 }

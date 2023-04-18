@@ -1,41 +1,43 @@
 //Strings
 
-// Exercise 1
+console.log("Strings")
+
+// Exercise A
 
 var text = "RodrigoDePaul";
 var textToUppercase = text.toUpperCase();
 
-console.log(textToUppercase) // RODRIGRODEPAUL
+console.log("Exercise 2-A: " + textToUppercase); // RODRIGRODEPAUL
 
-//Exercise 2
+//Exercise B
 
 var firstText = "MessiLeonel";
 var beginFirstText = firstText.substring(0,5);
 
-console.log(completedText); // Messi
+console.log("Exercise 2-B: " + completedText); // Messi
 
-//Exercise 3
+//Exercise C
 
 var secondText = "GiovaniLocelso";
 var endSecondText = secondText.substring(11);
 
-console.log(endSecondText); // lso
+console.log("Exercise 2-C: " + endSecondText); // lso
 
-//Exercise 4
+//Exercise D
 
 var thirdText = "angelDiMaria";
 var newThirdText = thirdText.substring(0,1).toUpperCase() + thirdText.substring(1, 12).toLowerCase();
 
-console.log(newThirdText); // Angeldimaria
+console.log("Exercise 2-D: " + newThirdText); // Angeldimaria
 
-//Exercise 5
+//Exercise E
 
 var fourthText = "Julian Alvarez";
 var spaceFourthText = fourthText.indexOf(" ");
 
-console.log(spaceFourthText); // 6
+console.log("Exercise 2-E: " + spaceFourthText); // 6
 
-//Exercise 6
+//Exercise F
 
 var fifthText = "lEaNdro pareDeS";
 var firstLetter = fifthText.substring(0,1).toUpperCase();
@@ -45,9 +47,7 @@ var secondWord = fifthText.substring(fifthText.indexOf(" ") + 2).toLowerCase();
 
 var completedText = firstLetter + firstWord + " " + secondLetter + secondWord;
 
-console.log(completedText); // Leandro Paredes
-
-console.log("Strings exercises end")
+console.log("Exercise 2-F: " + completedText); // Leandro Paredes
 
 
 

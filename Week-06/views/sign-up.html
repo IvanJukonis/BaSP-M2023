@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="..\css\main.css"/>
         <link rel="stylesheet" href="..\css\header.css"/>
         <link rel="stylesheet" href="..\css\aside.css"/>
-        <link rel="stylesheet" href="..\css\footer.css"/>
+        <link rel="stylesheet" href="..\css\sign-up.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -68,26 +68,104 @@
                 </nav>
             </aside>
             <main>
-                <p>ESTE ES EL SIGN UP</p>
+                <section class="signup-container">
+                    <form>
+                        <div class="signup-form">
+                            <div class="signup-form-top">
+                                <div>
+                                    <label for="name">
+                                        Name
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter name">
+                                </div>
+                                <div>
+                                    <label for="lastname">
+                                        Last name
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter last name">
+                                </div>
+                                <div>
+                                    <label for="dni">
+                                        DNI
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter dni">
+                                </div>
+                                <div>
+                                    <label for="birthday">
+                                        Birthday
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter birthday">
+                                </div>
+                                <div>
+                                    <label for="tel">
+                                        Telephone Number
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter telephone number">
+                                </div>
+                                <div>
+                                    <label for="address">
+                                        Address
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter address">
+                                </div>
+                            </div>
+                            <div class="signup-form-bottom">
+                                <div>
+                                    <label for="location">
+                                        Location
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter location">
+                                </div>
+                                <div>
+                                    <label for="code">
+                                        Area Code
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter area code">
+                                </div>
+                                <div>
+                                    <label for="email">
+                                        Email
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter email">
+                                </div>
+                                <div>
+                                    <label for="password">
+                                        Password
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Enter password">
+                                </div>
+                                <div>
+                                    <label for="repeatPassword">
+                                        Repeat Password
+                                    </label>
+                                    <input class="form-input" type="text" placeholder="Repeat password">
+                                </div>
+                                <div class="form-select">
+                                    <div>
+                                        <label>
+                                            Membership
+                                        </label>
+                                        <select>
+                                            <option value="classes">
+                                                Only Classes
+                                            </option>
+                                            <option value="classic">
+                                                Classic Membership
+                                            </option>
+                                            <option value="black">
+                                                Black Membership
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="form-button" type="submit" value="Register">
+                        </div>
+                    </form>
+                </section>
             </main>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div>
-                    <a href="">
-                        <img src="../assets/icon-link.png" alt="Linkedin icon">
-                    </a>
-                    <a href="">
-                        <img src="../assets/link-facebook.png" alt="Facebook icon">
-                    </a>
-                    <a href="">
-                        <img src="../assets/icon-instagram.png" alt="Instagram icon">
-                    </a>
-                </div>
-                <h3>
-                    Copyright © 2022 Radium Rocket. All rights reserved.
-                </h3>
-            </div>
-        </footer>
     </body>
 </html>

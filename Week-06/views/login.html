@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="..\css\main.css"/>
         <link rel="stylesheet" href="..\css\header.css"/>
         <link rel="stylesheet" href="..\css\aside.css"/>
-        <link rel="stylesheet" href="..\css\footer.css"/>
+        <link rel="stylesheet" href="..\css\login.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -68,26 +68,37 @@
                 </nav>
             </aside>
             <main>
-                <p>ESTE ES EL LOGIN</p>
+                <section class="login-container">
+                    <div class="login-title">
+                        <h1>Log In</h1>
+                    </div>
+                    <form class="login-form">
+                        <div class="login-form-top">
+                            <div>
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input class="form-input" type="text" placeholder="Enter Username">
+                            </div>
+                            <div>
+                                <label for="password">
+                                    Password
+                                </label>
+                                <input class="form-input" type="text" placeholder="Enter password">
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox" id="cbox1" value="rememberMe"> Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="login-form-bottom">
+                            <a href="">Forgot your Password ?</a>
+                            <input class="form-button" type="submit" value="Login">
+                        </div>
+                    </form>
+                </section>
             </main>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div>
-                    <a href="">
-                        <img src="../assets/icon-link.png" alt="Linkedin icon">
-                    </a>
-                    <a href="">
-                        <img src="../assets/link-facebook.png" alt="Facebook icon">
-                    </a>
-                    <a href="">
-                        <img src="../assets/icon-instagram.png" alt="Instagram icon">
-                    </a>
-                </div>
-                <h3>
-                    Copyright © 2022 Radium Rocket. All rights reserved.
-                </h3>
-            </div>
-        </footer>
     </body>
 </html>

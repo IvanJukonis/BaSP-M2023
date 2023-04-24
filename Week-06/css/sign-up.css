@@ -1,11 +1,4 @@
-.container-body {
-    height: 100%;
-}
-
-.signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
     height: 100%;
 }
 
@@ -14,7 +7,18 @@ form {
     flex-direction: column;
     align-items: center;
     width: 80%;
+    margin: 20px 0px 20px 0px;
     border: 1px solid #373867;
+}
+
+.container-body {
+    height: 100%;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-form {
@@ -83,4 +87,29 @@ form {
     font-size: 12px;
     line-height: 19px;
     color: #373867;
+}
+
+@media only screen and (min-width: 601px) {
+
+    .form-input, .form-select select {
+        width: 200px;
+        height: 30px;
+    }
+
+    .signup-container {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .signup-form label {
+        font-size: 14px;
+    }
+
+    .form-input .form-select select {
+        width: 260px;
+        height: 36px;
+    }
+
 }

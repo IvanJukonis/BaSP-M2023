@@ -227,11 +227,6 @@ function validateInputLocation() {
         setError(loc, textError)
         alertText = textError;
         return alertText
-    } else if (!hasLetters(locValue) === true || !hasNumbers(locValue) === true) {
-        const textError = "Location must contain numbers and letters."
-        setError(loc, textError)
-        alertText = textError;
-        return alertText
     } else {
         setSuccess(loc);
         alertText = locValue;
@@ -242,21 +237,21 @@ function validateInputLocation() {
 function validateInputAreaCode() {
     const areaCodeValue = areaCode.value.trim();
     if (areaCodeValue === '') {
-        const textError = "Area Code is required."
+        const textError = "Area code is required."
         setError(areaCode, textError);
         return alertText = textError;
-    } else if (areaCodeValue.length < 8 ) {
-        const textError = "Area Code must be at least 8 character."
+    } else if (areaCodeValue.length < 4 || areaCodeValue.length > 5 ) {
+        const textError = "Area code must be between 4 and 5."
         setError(areaCode, textError)
         alertText = textError;
         return alertText
-    } else if (hasSpecialCharacters(areaCodeValue) || areaCodeValue.indexOf(' ') > 0) {
-        const textError = "Area Code cant contain special characters."
+    } else if (hasSpecialCharacters(areaCodeValue, true)) {
+        const textError = "Area code cant contain special characters."
         setError(areaCode, textError)
         alertText = textError;
         return alertText
-    } else if (!hasLetters(areaCodeValue) === true || !hasNumbers(areaCodeValue) === true) {
-        const textError = "Area Code must contain numbers and letters."
+    } else if (hasLetters(areaCodeValue) === true) {
+        const textError = "Area code cant contain letters."
         setError(areaCode, textError)
         alertText = textError;
         return alertText
@@ -316,28 +311,47 @@ function validateInputPassword() {
 
 function validateInputPasswordRepeat() {
     const passwordRepeatValue = passwordRepeat.value.trim();
+    const passwordValue = password.value.trim();
     if (passwordRepeatValue === '') {
-        const textError = "PasswordRepeat is required."
+        const textError = "Password repetition is required."
         setError(passwordRepeat, textError);
         return alertText = textError;
-    } else if (passwordRepeatValue.length < 8 ) {
-        const textError = "PasswordRepeat must be at least 8 character."
+    } else if (passwordRepeatValue === passwordValue) {
+        setSuccess(passwordRepeat);
+        alertText = passwordRepeatValue;
+        return alertText
+    } else {
+        const textError = "Password do not match."
         setError(passwordRepeat, textError)
         alertText = textError;
         return alertText
-    } else if (hasSpecialCharacters(passwordRepeatValue) || passwordRepeatValue.indexOf(' ') > 0) {
-        const textError = "PasswordRepeat cant contain special characters."
-        setError(passwordRepeat, textError)
+    }
+}
+
+function validateInputBirthday() {
+    const passwordValue = password.value.trim();
+    if (passwordValue === '') {
+        const textError = "Password is required."
+        setError(password, textError);
+        return alertText = textError;
+    } else if (passwordValue.length < 8 ) {
+        const textError = "Password must be at least 8 character."
+        setError(password, textError)
         alertText = textError;
         return alertText
-    } else if (!hasLetters(passwordRepeatValue) === true || !hasNumbers(passwordRepeatValue) === true) {
-        const textError = "PasswordRepeat must contain numbers and letters."
-        setError(passwordRepeat, textError)
+    } else if (hasSpecialCharacters(passwordValue) || passwordValue.indexOf(' ') > 0) {
+        const textError = "Password cant contain special characters."
+        setError(password, textError)
+        alertText = textError;
+        return alertText
+    } else if (!hasLetters(passwordValue) === true || !hasNumbers(passwordValue) === true) {
+        const textError = "Password must contain numbers and letters."
+        setError(password, textError)
         alertText = textError;
         return alertText
     } else {
-        setSuccess(passwordRepeat);
-        alertText = passwordRepeatValue;
+        setSuccess(password);
+        alertText = passwordValue;
         return alertText
     }
 }

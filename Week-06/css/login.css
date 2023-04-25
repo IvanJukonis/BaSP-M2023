@@ -94,6 +94,16 @@ form {
     color: #373867;
 }
 
+.form-button:hover {
+    background: #94d17a;
+    box-shadow: 0 2px #666;
+    cursor: pointer;
+}
+
+.form-button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
 
 .login-form-input input:focus {
     outline: 0;

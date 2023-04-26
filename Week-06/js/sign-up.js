@@ -329,34 +329,21 @@ function validateInputPasswordRepeat() {
 }
 
 function validateInputBirthday() {
-    const passwordValue = password.value.trim();
-    if (passwordValue === '') {
-        const textError = "Password is required."
-        setError(password, textError);
+    const birthdayValue = birthday.value.trim();
+    var dateEl = birthdayValue.split('-')
+    var formattedDate = dateEl[2] + '/' + dateEl[1] + '/' + dateEl[0]
+    if (birthdayValue === '') {
+        const textError = "Birthday is required."
+        setError(birthday, textError);
         return alertText = textError;
-    } else if (passwordValue.length < 8 ) {
-        const textError = "Password must be at least 8 character."
-        setError(password, textError)
-        alertText = textError;
-        return alertText
-    } else if (hasSpecialCharacters(passwordValue) || passwordValue.indexOf(' ') > 0) {
-        const textError = "Password cant contain special characters."
-        setError(password, textError)
-        alertText = textError;
-        return alertText
-    } else if (!hasLetters(passwordValue) === true || !hasNumbers(passwordValue) === true) {
-        const textError = "Password must contain numbers and letters."
-        setError(password, textError)
-        alertText = textError;
-        return alertText
     } else {
-        setSuccess(password);
-        alertText = passwordValue;
+        setSuccess(birthday);
+        alertText = formattedDate;
         return alertText
     }
 }
 
-function sumbitForm() {
+function submitForm() {
     var innerAlert = ""
     validateInputName()
     innerAlert += alertText + "\n";
@@ -379,6 +366,8 @@ function sumbitForm() {
     validateInputEmail();
     innerAlert += alertText + "\n";
     validateInputPasswordRepeat();
+    innerAlert += alertText + "\n";
+    validateInputBirthday();
     innerAlert += alertText + "\n";
     alert(innerAlert);
 }
@@ -403,4 +392,6 @@ password.addEventListener("blur", validateInputPassword);
 password.addEventListener("focus", function e() {setSuccess(password)});
 passwordRepeat.addEventListener("blur", validateInputPasswordRepeat);
 passwordRepeat.addEventListener("focus", function e() {setSuccess(passwordRepeat)});
-register.addEventListener("click", sumbitForm);
+birthday.addEventListener("blur", validateInputBirthday);
+birthday.addEventListener("focus", function e() {setSuccess(birthday)});
+register.addEventListener("click", submitForm);

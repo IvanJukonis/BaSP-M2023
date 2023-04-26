@@ -55,7 +55,7 @@ function hasNumbers(text){
        }
     }
     return false;
- }
+}
 
 
 function validateInputEmail() {
@@ -105,7 +105,7 @@ function validateInputPassword() {
     }
 }
 
-function sumbitForm() {
+function submitForm() {
     validateInputEmail()
     validateInputPassword()
     const parentEmail = email.parentElement;
@@ -127,5 +127,5 @@ email.addEventListener("blur", validateInputEmail);
 email.addEventListener("focus", function e() {setSuccess(email)});
 password.addEventListener("blur", validateInputPassword);
 password.addEventListener("focus", function e() {setSuccess(password)});
-login.addEventListener("click", sumbitForm)
+login.addEventListener("click", submitForm)
 

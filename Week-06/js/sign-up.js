@@ -78,7 +78,7 @@ function validateInputName() {
         setError(userName, textError);
         return alertText = textError;
     } else if (userNameValue.length < 3 ) {
-        const textError = "Name must be at least 8 character."
+        const textError = "Name must be at least 3 character."
         setError(userName, textError)
         alertText = textError;
         return alertText
@@ -288,7 +288,7 @@ function validateInputPassword() {
         setError(password, textError);
         return alertText = textError;
     } else if (passwordValue.length < 8 ) {
-        const textError = "Password must be at least 8 character."
+        const textError = "Password must be at least 8 characters."
         setError(password, textError)
         alertText = textError;
         return alertText

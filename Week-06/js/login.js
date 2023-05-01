@@ -115,8 +115,8 @@ function loginRequest() {
         } else {
             alert("There was an error while submitting the request." + " " +
             "Error type: " + response.status + "\n" + "User or Password incorrect.");
-            throw new Error("Request error." );
-            }
+            throw new Error("Request error.");
+        }
     })
     .then(function(data) {
         alert(`The request was successfully completed.` + " " + data.msg);

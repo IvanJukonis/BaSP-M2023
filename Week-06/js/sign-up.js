@@ -76,22 +76,23 @@ function validateInputName() {
     if (userNameValue === '') {
         const textError = "Name is required.";
         setError(userName, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (userNameValue.length < 3 ) {
         const textError = "Name must be at least 3 character.";
         setError(userName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(userNameValue, false)) {
         const textError = "Name cant contain special characters.";
         setError(userName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasNumbers(userNameValue) === true) {
         const textError = "Name cant contain numbers.";
         setError(userName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(userName);
         alertText = userNameValue;
@@ -104,22 +105,23 @@ function validateInputLastname() {
     if (lastNameValue === '') {
         const textError = "Lastname is required."
         setError(lastName, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (lastNameValue.length < 3 ) {
         const textError = "Lastname must be at least 3 character."
         setError(lastName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(lastNameValue, false)) {
         const textError = "Lastname cant contain special characters.";
         setError(lastName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasNumbers(lastNameValue) === true) {
         const textError = "Lastname cant contain numbers.";
         setError(lastName, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(lastName);
         alertText = lastNameValue;
@@ -132,26 +134,27 @@ function validateInputDni() {
     if (dniValue === '') {
         const textError = "Dni is required.";
         setError(dni, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (dniValue.length < 8 ) {
         const textError = "Dni must be at least 8 characters long.";
         setError(dni, textError)
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(dniValue, true)) {
         const textError = "Dni cant contain special characters.";
         setError(dni, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasLetters(dniValue) === true) {
         const textError = "Dni cant contain letters.";
         setError(dni, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(dni);
         alertText = dniValue;
-        return alertTextDniSuccess;
+        return alertText;
     }
 }
 
@@ -160,22 +163,23 @@ function validateInputTelephone() {
     if (telephoneValue === '') {
         const textError = "Telephone is required.";
         setError(telephone, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (telephoneValue.length != 10 ) {
-        const textError = "Telephone must be at least 10 characters long."
+        const textError = "Telephone must be 10 characters long."
         setError(telephone, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(telephoneValue, true)) {
         const textError = "Telephone cant contain special characters."
         setError(telephone, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasLetters(telephoneValue) === true) {
         const textError = "Telephone cant contain letters.";
         setError(telephone, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(telephone);
         alertText = telephoneValue;
@@ -188,22 +192,23 @@ function validateInputAddress() {
     if (addressValue === '') {
         const textError = "Address is required.";
         setError(address, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (addressValue.length < 5 ) {
         const textError = "Address must be at least 5 character.";
         setError(address, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(addressValue, false)) {
         const textError = "Address cant contain special characters.";
         setError(address, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (!hasLetters(addressValue) === true || !hasNumbers(addressValue) === true) {
         const textError = "Address must contain numbers and letters.";
         setError(address, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(address);
         alertText = addressValue;
@@ -216,17 +221,18 @@ function validateInputLocation() {
     if (locValue === '') {
         const textError = "Location is required.";
         setError(loc, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (locValue.length < 3 ) {
         const textError = "Location must be at least 3 character.";
         setError(loc, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(locValue, false)) {
         const textError = "Location cant contain special characters.";
         setError(loc, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(loc);
         alertText = locValue;
@@ -239,22 +245,23 @@ function validateInputAreaCode() {
     if (areaCodeValue === '') {
         const textError = "Area code is required.";
         setError(areaCode, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (areaCodeValue.length < 4 || areaCodeValue.length > 5 ) {
         const textError = "Area code must be between 4 and 5.";
         setError(areaCode, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(areaCodeValue, true)) {
         const textError = "Area code cant contain special characters.";
         setError(areaCode, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasLetters(areaCodeValue) === true) {
         const textError = "Area code cant contain letters.";
         setError(areaCode, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(areaCode);
         alertText = areaCodeValue;
@@ -268,12 +275,12 @@ function validateInputEmail() {
         const textError = "Email is required.";
         setError(email, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (!isValidEmail(emailValue)) {
         const textError = "Provide a valid email address.";
         setError(email, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(email);
         alertText = emailValue;
@@ -286,22 +293,23 @@ function validateInputPassword() {
     if (passwordValue === '') {
         const textError = "Password is required.";
         setError(password, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (passwordValue.length < 8 ) {
         const textError = "Password must be at least 8 characters.";
         setError(password, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (hasSpecialCharacters(passwordValue) || passwordValue.indexOf(' ') > 0) {
         const textError = "Password cant contain special characters.";
         setError(password, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else if (!hasLetters(passwordValue) === true || !hasNumbers(passwordValue) === true) {
         const textError = "Password must contain numbers and letters.";
         setError(password, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     } else {
         setSuccess(password);
         alertText = passwordValue;
@@ -315,7 +323,8 @@ function validateInputPasswordRepeat() {
     if (passwordRepeatValue === '') {
         const textError = "Password repetition is required.";
         setError(passwordRepeat, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else if (passwordRepeatValue === passwordValue) {
         setSuccess(passwordRepeat);
         alertText = passwordRepeatValue;
@@ -324,7 +333,7 @@ function validateInputPasswordRepeat() {
         const textError = "Password do not match.";
         setError(passwordRepeat, textError);
         alertText = textError;
-        return alertText;
+   return {var1: alertText, var2: false}
     }
 }
 
@@ -335,7 +344,8 @@ function validateInputBirthday() {
     if (birthdayValue === '') {
         const textError = "Birthday is required.";
         setError(birthday, textError);
-        return alertText = textError;
+        alertText = textError;
+        return {var1: alertText, var2: false}
     } else {
         setSuccess(birthday);
         alertText = formattedDate;
@@ -370,6 +380,26 @@ function submitForm() {
     validateInputBirthday();
     innerAlert += alertText + "\n";
     alert(innerAlert);
+
+    const isValidName = validateInputName();
+    const isValidLastName = validateInputLastname();
+    const isValidDni = validateInputDni();
+    const isValidBirthday = validateInputBirthday();
+    const isValidTelephone = validateInputTelephone();
+    const isValidAddress = validateInputAddress();
+    const isValidLoc = validateInputLocation();
+    const isValidAreaCode = validateInputAreaCode();
+    const isValidEmail = validateInputEmail();
+    const isValidPassword = validateInputPassword();
+    const isValidPasswordRepeat = validateInputPasswordRepeat();
+
+    if (isValidName.var2 === false || isValidLastName.var2 === false || isValidDni.var2 === false ||
+        isValidBirthday.var2 === false || isValidTelephone.var2 === false || isValidAddress.var2 === false ||
+        isValidLoc.var2 === false || isValidAreaCode.var2 === false || isValidEmail.var2 === false || isValidPassword.var2 === false ||
+        isValidPasswordRepeat.var2 === false) {
+    } else {
+        
+    }
 }
 
 userName.addEventListener("blur", validateInputName);
@@ -395,3 +425,25 @@ passwordRepeat.addEventListener("focus", function e() {setSuccess(passwordRepeat
 birthday.addEventListener("blur", validateInputBirthday);
 birthday.addEventListener("focus", function e() {setSuccess(birthday)});
 register.addEventListener("click", submitForm);
+
+function loginRequest() {
+    const url = "https://api-rest-server.vercel.app/login";
+    const queryParams = `?email=${email.value}&password=${password.value}`;
+    fetch(url + queryParams)
+        .then(function(response) {
+        if (response.ok) {
+            return response.json();
+        } else {
+            alert("There was an error while submitting the request." + " " +
+            "Error type: " + response.status + "\n" + "User or Password incorrect.");
+            throw new Error("Request error.");
+        }
+    })
+    .then(function(data) {
+        alert(`The request was successfully completed.` + " " + data.msg);
+        alert("Welcome to MEGAROCKEYGYM" + "\n" + alertTextPasswordSuccess + "\n" + alertTextEmailSuccess);
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
+}

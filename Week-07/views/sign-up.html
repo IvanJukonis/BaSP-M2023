@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css"/>
+        <link rel="stylesheet" href="..\css\main.css"/>
+        <link rel="stylesheet" href="..\css\header.css"/>
+        <link rel="stylesheet" href="..\css\aside.css"/>
+        <link rel="stylesheet" href="..\css\sign-up.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>
+            MEGAROCKET WEB
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <img src="../assets/image-megarocket.png" alt="MegaRocket logo">
+                <img class ="menu-img" src="../assets/icon-menu.png" alt="Menu icon">
+            </div>
+        </header>
+        <div class="container-body">
+            <aside>
+                <nav class="bar-aside">
+                    <div class="container-top-aside">
+                        <a href="../views/index.html">
+                            <span class="container-img-aside">
+                                <img src="../assets/icon-home2.png" alt="Home icon">
+                                    Home
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="container-img-aside">
+                                <img src="../assets/icon-arrow.png" alt="Arrow icon">
+                                    Sign Up
+                            </span>
+                        </a>
+                        <a href="../views/login.html">
+                            <span class="container-img-aside">
+                                <img src="../assets/icon-arrow2.png" alt="Arrow icon 2">
+                                    Sign In
+                            </span>
+                        </a>
+                    </div>
+                    <div class="container-bottom-aside">
+                        <h2 id="title-bottom-aside">
+                            Contact information
+                        </h2>
+                        <span class="container-icon-aside">
+                            <a href="*">
+                                <img src="../assets/icon-message.png" alt="Message icon">
+                                information@untitled.tld
+                            </a>
+                        </span>
+                        <span class="container-icon-aside">
+                            <img src="../assets/icon-tel.png" alt="Telephone icon">
+                            (000) 0000-0000
+                        </span>
+                        <span class="container-icon-aside">
+                            <img src="../assets/icon-home.png" alt="Home icon">
+                            1234 Somewhere Road #8254 Nashville, TN
+                        </span>
+                    </div>
+                </nav>
+            </aside>
+            <main>
+                <section class="signup-container">
+                    <form>
+                        <div class="signup-form">
+                            <div class="signup-form-top">
+                                <div class="login-form-input">
+                                    <label for="name">
+                                        Name
+                                    </label>
+                                    <input class="form-input" id="name" type="text" placeholder="Enter name">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="lastname">
+                                        Last name
+                                    </label>
+                                    <input class="form-input" id="lastName" type="text" placeholder="Enter last name">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="dni">
+                                        DNI
+                                    </label>
+                                    <input class="form-input" id="dni" type="text" placeholder="Enter dni">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="birthdate">
+                                        Birth date
+                                    </label>
+                                    <input class="form-input" id="birthdate" type="date" placeholder="Enter birth date">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="tel">
+                                        Telephone Number
+                                    </label>
+                                    <input class="form-input" id="telephone" type="text" placeholder="Enter telephone number">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="address">
+                                        Address
+                                    </label>
+                                    <input class="form-input" id="address" type="text" placeholder="Enter address">
+                                    <div class="error"></div>
+                                </div class="login-form-input">
+                            </div>
+                            <div class="signup-form-bottom">
+                                <div class="login-form-input">
+                                    <label for="location">
+                                        Location
+                                    </label>
+                                    <input class="form-input" id="location" type="text" placeholder="Enter location">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="code">
+                                        Area Code
+                                    </label>
+                                    <input class="form-input" id="areaCode" type="text" placeholder="Enter area code">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="email">
+                                        Email
+                                    </label>
+                                    <input class="form-input" id="email" type="text" placeholder="Enter email">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="password">
+                                        Password
+                                    </label>
+                                    <input class="form-input" id="password" type="password" placeholder="Enter password">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="login-form-input">
+                                    <label for="repeatPassword">
+                                        Repeat Password
+                                    </label>
+                                    <input class="form-input" id="passwordRepeat" type="password" placeholder="Repeat password">
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-select">
+                                    <div>
+                                        <label>
+                                            Membership
+                                        </label>
+                                        <select>
+                                            <option value="classes">
+                                                Only Classes
+                                            </option>
+                                            <option value="classic">
+                                                Classic Membership
+                                            </option>
+                                            <option value="black">
+                                                Black Membership
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="form-button" id="form-button-register" type="button" value="Register">
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script src="../js/sign-up.js"></script>
+</html>

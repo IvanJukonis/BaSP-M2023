@@ -1,0 +1,139 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-body {
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-form-top div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.login-form-bottom a {
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+}
+
+.form-input {
+    width: 260px;
+    height: 36px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.form-input::placeholder {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c6c6c6;
+}
+
+.form-button {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-width: 0px;
+    border-radius: 5px;
+    background: #AACE9B;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
+    color: #373867;
+}
+
+.form-button:hover {
+    background: #94d17a;
+    box-shadow: 0 2px #666;
+    cursor: pointer;
+}
+
+.form-button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.login-form-input input:focus {
+    outline: 0;
+}
+
+.login-form-input.success input {
+    border-color: #373867;
+}
+
+.login-form-input.error input {
+    border-color: #ff3860;
+}
+
+.login-form-input .error {
+    margin-top: 5px;
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+@media only screen and (min-width: 601px) {
+
+    .login-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .login-container {
+        width: 38%;
+    }
+}

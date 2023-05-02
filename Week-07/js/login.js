@@ -105,6 +105,28 @@ function validateInputPassword() {
     }
 }
 
+function loginRequest() {
+    const url = "https://api-rest-server.vercel.app/login";
+    const queryParams = `?email=${email.value}&password=${password.value}`;
+    fetch(url + queryParams)
+        .then(function(response) {
+        if (response.ok) {
+            return response.json();
+        } else {
+            alert("There was an error while submitting the request." + " " +
+            "Error type: " + response.status + "\n" + "User or Password incorrect.");
+            throw new Error("Request error.");
+        }
+    })
+    .then(function(data) {
+        alert(`The request was successfully completed.` + " " + data.msg);
+        alert("Welcome to MEGAROCKEYGYM" + "\n" + alertTextPasswordSuccess + "\n" + alertTextEmailSuccess);
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
+}
+
 function submitForm() {
     validateInputEmail();
     validateInputPassword();
@@ -119,7 +141,7 @@ function submitForm() {
     } else if (valPasswordError) {
         alert("Password Error" + "\n" + alertTextPasswordError + "\n" + alertTextEmailSuccess);
     } else {
-        alert("Welcome to MEGAROCKEYGYM" + "\n" + alertTextPasswordSuccess + "\n" + alertTextEmailSuccess);
+        loginRequest();
     }
 }
 
@@ -128,3 +150,4 @@ email.addEventListener("focus", function e() {setSuccess(email)});
 password.addEventListener("blur", validateInputPassword);
 password.addEventListener("focus", function e() {setSuccess(password)});
 login.addEventListener("click", submitForm);
+

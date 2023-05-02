@@ -83,7 +83,7 @@ function validateInputName() {
         setError(userName, textError);
         alertText = textError;
    return {var1: alertText, var2: false}
-    } else if (hasSpecialCharacters(userNameValue, false)) {
+    } else if (hasSpecialCharacters(userNameValue, true)) {
         const textError = "Name cant contain special characters.";
         setError(userName, textError);
         alertText = textError;
@@ -223,8 +223,8 @@ function validateInputLocation() {
         setError(loc, textError);
         alertText = textError;
         return {var1: alertText, var2: false}
-    } else if (locValue.length < 3 ) {
-        const textError = "Location must be at least 3 character.";
+    } else if (locValue.length < 4 ) {
+        const textError = "Location must be at least 4 character.";
         setError(loc, textError);
         alertText = textError;
    return {var1: alertText, var2: false}
@@ -353,6 +353,52 @@ function validateInputBirthday() {
     }
 }
 
+function loginRequest() {
+    var nameValue = document.getElementById("name").value;
+    var surnameValue = document.getElementById("lastName").value;
+    var dniValue = document.getElementById("dni").value;
+    var birthValue = document.getElementById("birthday").value;
+    var birthValueSplit = birthValue.split("-");
+    var formattedBirthValue = birthValueSplit[1] + "/" + birthValueSplit[2] + "/" + birthValueSplit[0];
+    var phoneValue = document.getElementById("telephone").value;
+    var addressValue = document.getElementById("address").value;
+    var cityValue = document.getElementById("location").value;
+    var codeValue = document.getElementById("areaCode").value;
+    var passwordValue = document.getElementById("password").value;
+    var emailValue = document.getElementById("email").value;
+    console.log({dniValue})
+
+    const url = "https://api-rest-server.vercel.app/signup?name=" + nameValue + "&lastName="
+    + surnameValue + "&dni=" + dniValue + "&dob=" + formattedBirthValue + "&phone=" + phoneValue +
+    "&address=" + addressValue + "&city=" + cityValue + "&zip=" + codeValue +
+    "&email=" + emailValue + "&password=" + passwordValue
+    fetch(url)
+        .then(function(response) {
+        if (response.status === 404) {
+            alert("There was an error while submitting the request." + " " + "Error type: " + response.status);
+            throw new Error("Request error.");
+        } else {
+            return response.json();
+        }
+    })
+    .then(function(data) {
+        alert(`The request was successfully completed.` + " " + data.msg);
+        localStorage.setItem("name", nameValue);
+        localStorage.setItem("surname", surnameValue);
+        localStorage.setItem("dni", dniValue);
+        localStorage.setItem("dob", birthValue);
+        localStorage.setItem("phone", phoneValue);
+        localStorage.setItem("address", addressValue);
+        localStorage.setItem("city", cityValue);
+        localStorage.setItem("zip", codeValue);
+        localStorage.setItem("email", emailValue);
+        localStorage.setItem("password", passwordValue);
+    })
+    .catch(function(error) {
+        console.error(error);
+    })
+}
+
 function submitForm() {
     var innerAlert = "";
     validateInputName();
@@ -372,8 +418,6 @@ function submitForm() {
     validateInputEmail();
     innerAlert += alertText + "\n";
     validateInputPassword();
-    innerAlert += alertText + "\n";
-    validateInputEmail();
     innerAlert += alertText + "\n";
     validateInputPasswordRepeat();
     innerAlert += alertText + "\n";
@@ -398,7 +442,7 @@ function submitForm() {
         isValidLoc.var2 === false || isValidAreaCode.var2 === false || isValidEmail.var2 === false || isValidPassword.var2 === false ||
         isValidPasswordRepeat.var2 === false) {
     } else {
-        
+        loginRequest()
     }
 }
 
@@ -426,24 +470,32 @@ birthday.addEventListener("blur", validateInputBirthday);
 birthday.addEventListener("focus", function e() {setSuccess(birthday)});
 register.addEventListener("click", submitForm);
 
-function loginRequest() {
-    const url = "https://api-rest-server.vercel.app/login";
-    const queryParams = `?email=${email.value}&password=${password.value}`;
-    fetch(url + queryParams)
-        .then(function(response) {
-        if (response.ok) {
-            return response.json();
-        } else {
-            alert("There was an error while submitting the request." + " " +
-            "Error type: " + response.status + "\n" + "User or Password incorrect.");
-            throw new Error("Request error.");
-        }
-    })
-    .then(function(data) {
-        alert(`The request was successfully completed.` + " " + data.msg);
-        alert("Welcome to MEGAROCKEYGYM" + "\n" + alertTextPasswordSuccess + "\n" + alertTextEmailSuccess);
-    })
-    .catch(function(error) {
-        console.error(error);
-    });
-}
+window.onload = function() {
+    if (localStorage.getItem('name')) {
+        userName.value = localStorage.getItem('name');
+    }
+    if (localStorage.getItem('surname')) {
+        lastName.value = localStorage.getItem('surname');
+    }
+    if (localStorage.getItem('dni')) {
+        dni.value = parseInt(localStorage.getItem('dni'));
+    }
+    if (localStorage.getItem('dob')) {
+        birthday.value = localStorage.getItem('dob');
+    }
+    if (localStorage.getItem('phone')) {
+        telephone.value = parseInt(localStorage.getItem('phone'));
+    }
+    if (localStorage.getItem('address')) {
+        address.value = localStorage.getItem('address');
+    }
+    if (localStorage.getItem('city')) {
+        loc.value = localStorage.getItem('city');
+    }
+    if (localStorage.getItem('zip')) {
+        areaCode.value = parseInt(localStorage.getItem('zip'));
+    }
+    if (localStorage.getItem('email')) {
+        email.value = localStorage.getItem('email');
+    }
+};

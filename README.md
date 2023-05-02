@@ -15,9 +15,9 @@ Once you've opened the index.html file in your web browser, you will be taken to
 
 To deploy the project, I will be using GitHub Pages. GitHub Pages is a web hosting service that allows me to deploy my website directly from a GitHub repository.
 
-**Link:** https://ivanjukonis.github.io/BaSP-M2023/Week-04/index.html
-**Link:** https://ivanjukonis.github.io/BaSP-M2023/Week-05/index.html
-**Link:** https://ivanjukonis.github.io/BaSP-M2023/Week-06/index.html
+**Link:** https://ivanjukonis.github.io/BaSP-M2023/Week-07/index.html
+
+Make sure to navigate into the different weeks by changing the week number on the link.
 
 ## **Week 01**
 
@@ -66,6 +66,15 @@ Throughout the week, we completed a total of six sections, each with its own set
 **DOM Manipulation**
 
 During week 06, we focused on the manipulation of the **DOM** and how to implement form validation using JavaScript. Specifically, we worked on validating the login and sign up forms, which are critical components of any web application
+
+
+## **Week 07**
+
+**JavaScript Async y Storage**
+
+During the course, we learned about **asynchronous** programming in JavaScript, using **fetch** to make asynchronous HTTP requests to an authentication API for our login and signup forms. We also learned about **Promises**, which allowed us to handle responses from the API and update our user interface accordingly.
+
+Additionally, we added **localStorage** functionality to our project. This allowed us to store data on the client side, including information about the user's authentication status, preferences, and settings. By utilizing localStorage, we were able to persist user data between sessions, providing a more seamless and user-friendly experience.
 
 ## **Authors**
 - Ivan Jukonis
